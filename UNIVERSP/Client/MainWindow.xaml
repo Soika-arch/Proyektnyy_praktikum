@@ -1,0 +1,55 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Univer" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Умовно-постiйна iнформацiя" IsSubmenuOpen="True">
+                <MenuItem Header="Кафедра">
+                    <MenuItem Header="Довiдник 'Студенти'" Click="MenuItem_Click" Tag="Dovidnik_Students"/>
+                    <MenuItem Header="Довiдник 'Спiвробiтники'" Click="MenuItem_Click" Tag="Dovidnik_Spivrobitnykiv" />
+                    <MenuItem Header="Довiдник 'Посади'" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Вхiдна iнформацiя" IsSubmenuOpen="True">
+                <MenuItem Header="Трудовий контракт"/>
+                <MenuItem Header="Учбовий контракт"/>
+                <MenuItem Header="Розрив контракту"/>
+            </MenuItem>
+            <MenuItem Header="Вихiдна iнформацiя" IsSubmenuOpen="True" >
+                <MenuItem Header="Кiлькiсть контрактів трудових,учбових та розторгнутих"/>
+            </MenuItem>
+
+        </Menu>
+
+
+        <GroupBox Header="Співробітники" Grid.Row="1" Margin="10,10,416,105"  >
+            <TreeView ItemsSource="{Binding spivrobitnykiv}"  HorizontalAlignment="Center" Width="342" Height="257" MouseLeftButtonUp="TreeView_MouseLeftButtonUp">
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding cd}">
+                        <TextBlock Text="{Binding nazva}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+        </GroupBox>
+        <GroupBox Header="Студенти" Grid.Row="1" Margin="416,10,10,105"  >
+            <TreeView ItemsSource="{Binding student}"  HorizontalAlignment="Center" Width="342" Height="258" MouseLeftButtonUp="TreeView_MouseLeftButtonUp">
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding cd}">
+                        <TextBlock Text="{Binding nazva}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+        </GroupBox>
+    </Grid>
+</Window>

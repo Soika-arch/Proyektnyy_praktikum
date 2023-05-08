@@ -1,0 +1,12 @@
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\bin\Debug\net6.0-windows\Library.deps.json
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\bin\Debug\net6.0-windows\Library.dll
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\bin\Debug\net6.0-windows\Library.pdb
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\Library.csproj.AssemblyReference.cache
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\Library.AssemblyInfoInputs.cache
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\Library.AssemblyInfo.cs
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\Library.csproj.CoreCompileInputs.cache
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\Library.dll
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\refint\Library.dll
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\Library.pdb
+C:\Users\Vladislav\source\repos\UNIVERSP\Library\obj\Debug\net6.0-windows\ref\Library.dll
